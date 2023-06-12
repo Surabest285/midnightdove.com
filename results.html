@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <style>
+        body {
+            background-color: #000033;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #000044;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #cccccc;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Search Results</h1>
+    </header>
+
+    <section class="search-results">
+        <div class="container">
+            <h2>Search Results</h2>
+            <p>Showing results for: {{ query }}</p>
+            <ul>
+                {% for result in results %}
+                <li>{{ result }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>About Us</h2>
+            <footer>
+                <div class="container">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor purus eget consectetur eleifend. Sed finibus tellus nec libero convallis, eu rhoncus ligula convallis. Morbi at enim eu felis aliquam eleifend.</p>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <p>&copy; 2023 Your Website. All rights reserved.</p>
+                </div>
+            </footer>
+            <!-- Your footer code goes here -->
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Pictures</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+        background-image: url('https://img.freepik.com/free-photo/black-stucco-wall_1194-7605.jpg?t=st=1685773058~exp=1685773658~hmac=4234ebf18991166e8a4575661ea6f3e48d960f50177728fb2e745d497549c8b9');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        background-color: #000000;
+        padding: 100px 0;
+        margin: 0;
+      }
+      
+      .picture-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .picture-gallery img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+      }
+      
+      .picture-gallery img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      }
+      .picture-text {
+        color: #999516; /* Set the text color to golden */
+    
+      }
+      #text-container {
+        text-align: center;
+        margin-top:0px;
+      }
+      
+      #text {
+        color: #999516;
+      }
+      
+      /* Classification Styles */
+      .classification {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .classification a {
+        text-decoration: none;
+        color: #999516;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+      
+      .classification a:hover {
+        color: #405de6;
+      }
+      
+    .picture-gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .picture-container {
+      margin: 50px;
+      text-align: center;
+    }
+
+    .picture-name {
+      cursor: pointer;
+    }
+
+    #text-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+ <h1> MIDNIGHT DOVE DATA CENTER</h1>
+  </div>
+
+  <div class="classification">
+    <a href="#">Guns</a>
+    <a href="#">Vehicles</a>
+    <a href="#">Airplanes</a>
+    <a href="#">Marine Equipment</a>
+  </div>
+  
+  <div class="picture-gallery">
+    <!-- Your image gallery code -->
+  </div>
+  
+  <div id="text-container">
+    <p id="text"></p>
+  </div>
+  <div class="picture-gallery">
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\M16.jpg" alt="Picture 1" onclick="showText(1)">
+      <p class="picture-name" onclick="showText(1)">M16</p>
+      <p class="picture-text" id="text1"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\M28 sniper rifle.jpg" alt="Picture 2" onclick="showText(2)">
+      <p class="picture-name" onclick="showText(2)">M28 sniper rifle</p>
+      <p class="picture-text" id="text2"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\AK-47.jpg" alt="Picture 3" onclick="showText(3)">
+      <p class="picture-name" onclick="showText(3)">AK-47</p>
+      <p class="picture-text" id="text3"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\FN SCAR.jpg" alt="Picture 4" onclick="showText(4)">
+      <p class="picture-name" onclick="showText(4)">FN SCAR</p>
+      <p class="picture-text" id="text4"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\HK416.jpg" alt="Picture 5" onclick="showText(5)">
+      <p class="picture-name" onclick="showText(5)">HK416</p>
+      <p class="picture-text" id="text5"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Steyr AUG.jpg" alt="Picture 6" onclick="showText(6)">
+      <p class="picture-name" onclick="showText(6)">Steyr AUG</p>
+      <p class="picture-text" id="text6"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Beretta ARX160.jpg" alt="Picture 7" onclick="showText(7)">
+      <p class="picture-name" onclick="showText(7)">Beretta ARX160</p>
+      <p class="picture-text" id="text7"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\SIG SG 550.jpg" alt="Picture 8" onclick="showText(8)">
+      <p class="picture-name" onclick="showText(8)">SIG SG 550</p>
+      <p class="picture-text" id="text8"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Remington 700.jpg" alt="Picture 9" onclick="showText(9)">
+      <p class="picture-name" onclick="showText(9)">Remington 700</p>
+      <p class="picture-text" id="text9"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Barrett M82.jpg" alt="Picture 10" onclick="showText(10)">
+      <p class="picture-name" onclick="showText(10)">Barrett M82</p>
+      <p class="picture-text" id="text10"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Accuracy International AW50.jpg" alt="Picture 11" onclick="showText(11)">
+      <p class="picture-name" onclick="showText(11)">Accuracy International AW50</p>
+      <p class="picture-text" id="text11"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Sako TRG.jpg" alt="Picture 12" onclick="showText(12)">
+      <p class="picture-name" onclick="showText(12)">Sako TRG</p>
+      <p class="picture-text" id="text12"></p>
+    </div>
+    <!-- Add more picture containers for the remaining pictures -->
+
+    <div id="text-container">
+      <p id="text"></p>
+    </div>
+  </div>
+
+  <script src="servic.js"></script>
+</body>
+</html>

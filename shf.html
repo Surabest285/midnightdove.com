@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Pictures</title>
+  <style>
+    /* Add your CSS styles here */
+    .picture-gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .picture-container {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .picture-name {
+      cursor: pointer;
+    }
+
+    #text-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Clickable Pictures</h1>
+
+  <div class="picture-gallery">
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\M16.jpg" alt="Picture 1" onclick="showText(1)">
+      <p class="picture-name" onclick="showText(1)">M16</p>
+      <p class="picture-text" id="text1"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\M28 sniper rifle.jpg" alt="Picture 2" onclick="showText(2)">
+      <p class="picture-name" onclick="showText(2)">M28 sniper rifle</p>
+      <p class="picture-text" id="text2"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\AK-47.jpg" alt="Picture 3" onclick="showText(3)">
+      <p class="picture-name" onclick="showText(3)">AK-47</p>
+      <p class="picture-text" id="text3"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\FN SCAR.jpg" alt="Picture 4" onclick="showText(4)">
+      <p class="picture-name" onclick="showText(4)">FN SCAR</p>
+      <p class="picture-text" id="text4"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\HK416.jpg" alt="Picture 5" onclick="showText(5)">
+      <p class="picture-name" onclick="showText(5)">HK416</p>
+      <p class="picture-text" id="text5"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Steyr AUG.jpg" alt="Picture 6" onclick="showText(6)">
+      <p class="picture-name" onclick="showText(6)">Steyr AUG</p>
+      <p class="picture-text" id="text6"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Beretta ARX160.jpg" alt="Picture 7" onclick="showText(7)">
+      <p class="picture-name" onclick="showText(7)">Beretta ARX160</p>
+      <p class="picture-text" id="text7"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\SIG SG 550.jpg" alt="Picture 8" onclick="showText(8)">
+      <p class="picture-name" onclick="showText(8)">SIG SG 550</p>
+      <p class="picture-text" id="text8"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Remington 700.jpg" alt="Picture 9" onclick="showText(9)">
+      <p class="picture-name" onclick="showText(9)">Remington 700</p>
+      <p class="picture-text" id="text9"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Barrett M82.jpg" alt="Picture 10" onclick="showText(10)">
+      <p class="picture-name" onclick="showText(10)">Barrett M82</p>
+      <p class="picture-text" id="text10"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Accuracy International AW50.jpg" alt="Picture 11" onclick="showText(11)">
+      <p class="picture-name" onclick="showText(11)">Accuracy International AW50</p>
+      <p class="picture-text" id="text11"></p>
+    </div>
+    <div class="picture-container">
+      <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Sako TRG.jpg" alt="Picture 12" onclick="showText(12)">
+      <p class="picture-name" onclick="showText(12)">Sako TRG</p>
+      <p class="picture-text" id="text12"></p>
+    </div>
+    <!-- Add more picture containers as needed -->
+
+    <div id="text-container">
+      <p id="text"></p>
+    </div>
+  </div>
+
+  <script>
+    var activePicture = null;
+
+    function showText(pictureNumber) {
+      var textContainer = document.getElementById("text" + pictureNumber);
+      var text = "";
+
+      if (activePicture !== null && activePicture !== pictureNumber) {
+        // Hide the text of the previously active picture
+        var activeTextContainer = document.getElementById("text" + activePicture);
+        activeTextContainer.style.display = "none";
+      }
+
+      // Check if the text is currently visible
+      var isVisible = textContainer.style.display !== "none";
+
+      if (isVisible) {
+        // Hide the text
+        textContainer.style.display = "none";
+        activePicture = null; // No active picture
+      }
+      } else {
+      switch (pictureNumber) {
+        case 1:
+          text = "Details for M16";
+          break;
+        case 2:
+          text = "Details for M28 sniper rifle";
+          break;
+        case 3:
+          text = "Details for AK-47";
+          break;
+        case 4:
+          text = "Details for FN SCAR";
+          break;
+        case 5:
+          text = "Details for HK416";
+          break;
+        case 6:
+          text = "Details for Steyr AUG";
+          break;
+        case 7:
+          text = "Details for Beretta ARX160";
+          break;
+        case 8:
+          text = "Details for SIG SG 550";
+          break;
+        case 9:
+          text = "Details for Remington 700";
+          break;
+        case 10:
+          text = "Details for Barrett M82";
+          break;
+        case 11:
+          text = "Details for Accuracy International AW50";
+          break;
+        case 12:
+          text = "Details for Sako TRG";
+          break;
+        // Add more cases for additional pictures
+
+        default:
+          text = "Text not available";
+          break;
+      }
+
+      textContainer.textContent = text;
+      textContainer.style.display = "block";
+    
+    }
+  </script>
+</body>
+</html>

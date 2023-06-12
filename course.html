@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <img src="   c:\Users\PC\Downloads\logo.png    " alt="logo" width="150" height="150">
+  <h1><title>MidNight DOVE Courses</title></h1>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #000000;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://img.freepik.com/free-vector/dark-blue-distressed-texture_53876-80491.jpg?w=740&t=st=1685739222~exp=1685739822~hmac=93753a6b82c9a4dda35a90ff6a67fd9b8c637983adfb8cf1c462016e9d21477c');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 150px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f23b3b;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color:#fff;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color:#fff;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color:aqua;
+    }
+
+    footer {
+      background-color: #6f6a6a;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 0;
+    }
+
+    /* Media queries for responsive design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MidNight Dove Military Course</h1>
+  </header>
+
+  <nav>
+    <ul>
+     <h3> <li><a href="cc1.html">Basic Combat Training</a></li></h3>
+     <h3> <li><a href="cc3.html">Tactical Operations</a></li></h3>
+    <h3><li><a href="cc4.html">Leadership Development</a></li></h3>
+      <h3><li><a href="cc5.html">Special Forces Training</a></li></h3>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Welcome to our Military Course </h2>
+    <p>Learn valuable skills and knowledge in the field of military training.</p>
+
+    <h3>Upcoming Courses</h3>
+    <ul id="course-list">
+<p>-Basic Combat Training<br>
+   -Tactical Operations<br>
+   -Leadership Development<br>
+   -Special Forces Training
+</p>
+      <!-- Courses will be dynamically added here -->
+    </ul>
+
+    <h3>About Us</h3>
+    <p>We are dedicated to providing high-quality military training courses to individuals seeking to enhance their skills and excel in their military careers.</p>
+
+    <h3>Contact Us</h3>
+    <p>For inquiries and further information, please contact us at:</p>
+    <p>Email: surazy@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Military Course Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Course data (example)
+    const courses = [
+      
+      // Add more courses as needed
+    ];
+
+    // Generate the course list dynamically
+    const courseList = document.getElementById("course-list");
+    courses.forEach(course => {
+      const listItem = document.createElement("li");
+      listItem.textContent = `${course.title} - Instructor: ${course.instructor}`;
+      courseList.appendChild(listItem);
+    });
+  </script>
+</body>
+</html>

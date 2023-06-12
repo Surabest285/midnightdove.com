@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Military Media Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+       
+       
+       
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-item .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 30px;
+            opacity: 0.8;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .play-button {
+            opacity: 1;
+        }
+        
+        .video-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s;
+        }
+        
+        .video-modal.show {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .video-modal video {
+            width: 80%;
+            height: auto;
+            outline: none;
+        }
+        
+        .video-modal .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-item .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 30px;
+            opacity: 0.8;
+            z-index: 1;
+        }
+        .video-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s;
+        }
+        .video-modal.show {
+            visibility: visible;
+            opacity: 1;
+        }
+        .video-modal video {
+            width: 80%;
+            height: auto;
+            outline: none;
+        }
+        .video-modal .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Military Media Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="path/to/image1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 7">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 8">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 9">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 10">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 11">
+            </div>
+            <div class="gallery-item">
+                <img src="path/to/image3.jpg" alt="Image 12">
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+
+    <div class="video-modal">
+        <span class="close-button">&times;</span>
+        <video controls>
+            <source src="path/to/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        // JavaScript code to handle video modal functionality
+        var galleryItems = document.querySelectorAll('.gallery-item');
+        var videoModal = document.querySelector('.video-modal');
+        var closeBtn = document.querySelector('.close-button');
+
+        galleryItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                videoModal.classList.add('show');
+            });
+        });
+
+        closeBtn.addEventListener('click', function() {
+            videoModal.classList.remove('show');
+        });
+    </script>
+</body>
+</html>

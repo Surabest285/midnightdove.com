@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Pictures</title>
+  <style>
+    /* CSS styles omitted for brevity */
+  </style>
+</head>
+<body>
+  <h1>Clickable Pictures</h1>
+
+  <div class="picture-gallery">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\M16.jpg              " alt="Picture 1" onclick="showText(1)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\M28 sniper rifle.jpg " alt="Picture 2" onclick="showText(2)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\AK-47.jpg            " alt="Picture 3" onclick="showText(3)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\FN SCAR.jpg          " alt="Picture 4" onclick="showText(4)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\HK416.jpg            " alt="Picture 5" onclick="showText(5)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Steyr AUG.jpg        " alt="Picture 6" onclick="showText(6)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Beretta ARX160.jpg   " alt="Picture 7" onclick="showText(7)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\SIG SG 550.jpg       " alt="Picture 8" onclick="showText(8)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Remington 700.jpg    " alt="Picture 9" onclick="showText(9)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Barrett M82.jpg      " alt="Picture 10" onclick="showText(10)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Accuracy International AW50.jpg  " alt="Picture 11" onclick="showText(11)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Sako TRG.jpg         " alt="Picture 12" onclick="showText(12)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Dragunov SVD.jpg     " alt="Picture 12" onclick="showText(13)">
+    <!-- Add more pictures as needed -->
+
+    <div id="text-container">
+      <p id="text"></p>
+    </div>
+  </div>
+
+  <script>
+    function showText(pictureNumber) {
+      var textContainer = document.getElementById("text");
+      var text = "";
+
+      switch (pictureNumber) {
+        case 1:
+          text = "     KUYGEIWORUYGVBHORUWGBHRTGYA             ";
+          break;
+        case 2:
+          text = "        HGRU4YTGRU3Y          ";
+          break;
+        case 3:
+          text = "         UYGRU374TR87         ";
+          break;
+          case 4 :
+          text = "        UY3GRUWYFGU4YYYYYYYYYYYYYYYYY          ";
+          break;
+          case 5 :
+          text = "          HGGGGGGGGGGG         ";
+          break;
+          case 6 :
+          text = "          GGGGGGGGGGGGGGGG         ";
+          break;
+          case 7 :
+          text = "             GFYUUUUUUUUUUUUUUUUU      ";
+          break;
+          case 8 :
+          text = "                   ";
+          break;
+          case 9 :
+          text = "                   ";
+          break;
+          case 10 :
+          text = "                   ";
+          break;
+          case 11 :
+          text = "                   ";
+          break;
+          case 12 :
+          text = "                   ";
+          break;
+          case 13 :
+          text = "                   ";
+          break;
+        // Add more cases for additional pictures
+
+        default:
+          text = "Text not available";
+          break;
+      }
+
+      textContainer.textContent = text;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Pictures</title>
+  <style>
+    /* CSS styles omitted for brevity */
+    /* CSS styles for Instagram-like appearance */
+/* CSS styles for Instagram-like appearance */
+body {
+    background-image: url('https://img.freepik.com/free-photo/black-stucco-wall_1194-7605.jpg?t=st=1685773058~exp=1685773658~hmac=4234ebf18991166e8a4575661ea6f3e48d960f50177728fb2e745d497549c8b9');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #000000;
+    padding: 100px 0;
+    margin: 0;
+  }
+  
+  .picture-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .picture-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .picture-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  #text-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #text {
+    color: #333;
+  }
+  
+  /* Classification Styles */
+  .classification {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .classification a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .classification a:hover {
+    color: #405de6;
+  }
+  
+
+
+/* Adjust the styles as needed to make it even cooler */
+
+  </style>
+</head>
+<body>
+  <h1>MIDNIGHT DOVE DATA CENTER</h1>
+
+  <div class="picture-gallery">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\M16.jpg              " alt="Picture 1" onclick="showText(1)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\M28 sniper rifle.jpg " alt="Picture 2" onclick="showText(2)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\AK-47.jpg            " alt="Picture 3" onclick="showText(3)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\FN SCAR.jpg      " alt="Picture 4" onclick="showText(4)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\HK416.jpg            " alt="Picture 5" onclick="showText(5)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Steyr AUG.jpg        " alt="Picture 6" onclick="showText(6)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Beretta ARX160.jpg   " alt="Picture 7" onclick="showText(7)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\SIG SG 550.jpg   " alt="Picture 8" onclick="showText(8)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Remington 700.jpg    " alt="Picture 9" onclick="showText(9)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Barrett M82.jpg      " alt="Picture 10" onclick="showText(10)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Accuracy International AW50.jpg  " alt="Picture 11" onclick="showText(11)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Sako TRG.jpg         " alt="Picture 12" onclick="showText(12)">
+    <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\Dragunov SVD.jpg     " alt="Picture 12" onclick="showText(13)">
+    <!-- Add more pictures as needed -->
+
+    <div id="text-container">
+      <p id="text"></p>
+    </div>
+  </div>
+
+  <script>
+    function showText(pictureNumber) {
+      var textContainer = document.getElementById("text");
+      var text = "";
+
+      switch (pictureNumber) {
+        case 1:
+          text = "  
+
+          The M16 is a widely recognized and iconic military rifle that has been in service since the 1960s. It originated in the United States and has been used extensively by the U.S. military and various armed forces around the world. Here are some key details about the M16:
+          
+          1. Design and Features:
+             - The M16 is a lightweight, magazine-fed, air-cooled rifle.
+             - It features a gas-operated, rotating bolt system.
+             - The rifle has a selective fire capability, allowing for both semi-automatic and fully automatic fire modes.
+          
+          2. Caliber and Ammunition:
+             - The M16 is chambered for the 5.56x45mm NATO cartridge.
+             - It typically uses 30-round detachable box magazines.
+          
+          3. Variants:
+             - The original M16 model was later updated and designated as the M16A1.
+             - Subsequent variants, such as the M16A2, M16A3, and M16A4, have seen improvements in terms of ergonomics, sights, and accessories.
+          
+          4. Features and Upgrades:
+             - The M16 is known for its distinctive features, including the carry handle with integrated sights and the adjustable stock.
+             - Modern versions often include Picatinny rails for attaching accessories such as optics, lasers, and tactical lights.
+          
+          5. Performance and Accuracy:
+             - The M16 is known for its relatively high accuracy and effective range.
+             - The small caliber and high velocity of the 5.56x45mm NATO round contribute to its flat trajectory and good terminal performance.
+          
+          6. Influence and Legacy:
+             - The M16 and its variants have had a significant impact on firearm design and influenced the development of other rifles worldwide.
+             - The rifle's lightweight construction and effective range have made it a popular choice for infantry and special forces
+          
+          It's important to note that the M16 has undergone continuous development and has seen various improvements over the years. Different military forces may have specific versions or modifications based on their requirements and preferences " ;
+          break;
+        case 2:
+          text = " Certainly! Here's some detailed information about the Barrett M82 sniper rifle 
+
+          1. Design and Features:
+             - The Barrett M82, also known as the M107, is a semi-automatic, recoil-operated sniper rifle.
+             - It was designed by Ronnie Barrett and introduced in the early 1980s.
+             - The rifle has a bullpup design, with the magazine located behind the trigger.
+          
+          2. Caliber and Ammunition:
+             - The Barrett M82 is chambered for the .50 BMG (Browning Machine Gun) cartridge.
+             - This large caliber ammunition provides long-range accuracy and exceptional penetration.
+          
+          3. Features and Construction:
+             - The M82 is a heavy-duty rifle constructed mainly from steel and aluminum alloys.
+             - It features a muzzle brake to reduce recoil and a detachable bipod for stability during sniper operations.
+          
+          4. Long-Range Capability:
+             - The Barrett M82 is renowned for its long-range capabilities and has an effective range of over 1,800 meters (2,000 yards).
+             - It is primarily used as an anti-materiel weapon for engaging targets such as vehicles, structures, and personnel in fortified positions.
+          
+          5. Optics and Accessories:
+             - The rifle is typically equipped with high-powered telescopic sights for long-range precision shooting.
+             - Additional accessories can be attached, such as suppressors, night vision devices, and auxiliary optics.
+          
+          6. Military and Law Enforcement Use:
+             - The Barrett M82 is utilized by various military and law enforcement agencies worldwide.
+             - It provides snipers with the ability to neutralize threats at extended ranges and penetrate various types of armor.
+          
+          7. Civilian Use:
+             - In some countries, a civilian version of the Barrett M82 is available for civilian use, primarily for long-range shooting and sports shooting competitions.
+          
+          8. Continued Development:
+             - The M82 has seen several iterations and improvements over the years, including the M82A1, M82A2, and M82A3 models, each with specific enhancements and modifications.
+          
+          It's important to note that the Barrett M82 is a powerful and specialized sniper rifle primarily used by military and law enforcement professionals. It is designed for long-range precision shooting and anti-materiel applications, and its civilian use may be subject to legal restrictions and regulations in different jurisdictions.                 ";
+          break;
+        case 3:
+          text = "  The AK-47, also known as the Avtomat Kalashnikova model 1947, is a renowned assault rifle that has gained significant recognition worldwide. Here is some detailed information about the AK-47:
+
+          1. Origin and Design:
+             - The AK-47 was designed by Mikhail Kalashnikov, a Soviet weapons designer, in the late 1940s.
+             - It was initially adopted by the Soviet Union's military forces in 1949 and later became a standard-issue firearm for many countries during the Cold War.
+          
+          2. Caliber and Ammunition:
+             - The AK-47 fires the 7.62x39mm intermediate cartridge.
+             - This cartridge is known for its moderate recoil, good penetration, and effectiveness at short to medium ranges.
+          
+          3. Construction and Features:
+             - The AK-47 is known for its rugged and simple design, making it reliable and easy to maintain even in adverse conditions.
+             - It features a selective fire system, allowing for both semi-automatic and fully automatic firing modes.
+             - The rifle has a gas-operated, rotating bolt mechanism, contributing to its reliability.
+          
+          4. Operating System:
+             - The AK-47 utilizes a long-stroke gas piston system, where the gas piston is directly attached to the bolt carrier.
+             - This system provides reliable functioning and helps to mitigate the impact of fouling and debris.
+          
+          5. Magazine and Capacity:
+             - The standard magazine capacity for the AK-47 is 30 rounds, although it can accept various magazines of different capacities.
+             - The curved detachable box magazine is often made of steel or polymer.
+          
+          6. Performance:
+             - The AK-47 is known for its robustness and ability to function in harsh environments with minimal maintenance.
+             - It has a cyclic rate of fire of around 600 rounds per minute in full-automatic mode.
+          
+          7. Global Popularity:
+             - The AK-47 has gained significant popularity and widespread use globally due to its reliability, simplicity, and effectiveness.
+             - It has been utilized by numerous military forces, insurgent groups, and militias in various conflicts worldwide.
+          
+          8. Variants and Modifications:
+             - Over the years, the AK-47 has spawned numerous variants and modified versions, adapted for different purposes and preferences.
+             - These variants include folding stock versions, shorter carbine models, and specialized versions for specific roles and environments.
+          
+          9. Impact and Legacy:
+             - The AK-47 has had a significant impact on firearms design and modern warfare, shaping the development of subsequent assault rifles.
+             - It has become an iconic symbol, representing armed conflict, revolution, and insurgency in popular culture.
+          
+          It's important to note that while the AK-47 is a widely recognized and influential firearm, it is primarily a military weapon designed for combat purposes. Ownership and use of AK-47 rifles by civilians may be subject to legal regulations and restrictions in different countries.                ";
+          break;
+          case 4 :
+          text = "      The FN SCAR, which stands for Special Operations Forces Combat Assault Rifle, is a modern military rifle designed and manufactured by the Belgian company FN Herstal. Here is some detailed information about the FN SCAR:
+
+          1. Origin and Design:
+             - The FN SCAR was developed to meet the requirements of the United States Special Operations Command (USSOCOM) for a versatile and modular rifle platform.
+             - It was designed in the early 2000s as part of the SCAR program, which aimed to replace the aging M4 carbine and M16 rifle used by U.S. Special Forces.
+          
+          2. Caliber and Ammunition:
+             - The FN SCAR is available in two main calibers: 5.56x45mm NATO and 7.62x51mm NATO.
+             - The 5.56x45mm version is known as the SCAR-L (Light), while the 7.62x51mm version is called the SCAR-H (Heavy).
+          
+          3. Construction and Features:
+             - The FN SCAR features a gas-operated, short-stroke piston system, which enhances reliability and reduces fouling.
+             - It has a free-floating, cold hammer-forged barrel that contributes to accuracy and longevity.
+             - The rifle is built with a polymer lower receiver and an aluminum upper receiver, making it lightweight and durable.
+          
+          4. Modular Design:
+             - The FN SCAR is designed to be highly modular and adaptable to various mission requirements.
+             - It features a monolithic upper receiver with a full-length Picatinny rail, allowing for the attachment of optics, accessories, and auxiliary sighting systems.
+             - The stock is foldable and adjustable for length of pull, and the rifle can be easily configured for both left-handed and right-handed shooters.
+          
+          5. Operating System:
+             - The SCAR utilizes a short-stroke piston system with a rotating bolt.
+             - This system provides reliable functioning and helps to mitigate the impact of fouling and adverse conditions.
+          
+          6. Magazine and Capacity:
+             - The FN SCAR typically uses detachable box magazines.
+             - The 5.56x45mm version usually has a magazine capacity of 30 rounds, while the 7.62x51mm version typically holds 20 rounds.
+          
+          7. Performance:
+             - The FN SCAR is known for its accuracy, reliability, and ergonomics.
+             - It offers a high degree of controllability, even in fully automatic fire mode.
+             - The rifle has a selective fire capability, allowing for both semi-automatic and fully automatic fire modes.
+          
+          8. Global Adoption:
+             - The FN SCAR has been adopted by several military and law enforcement agencies around the world.
+             - It has seen active use in various conflicts and operations, further establishing its reputation as a reliable and effective firearm.
+          
+          9. Variants:
+             - In addition to the standard SCAR-L and SCAR-H variants, FN Herstal has developed other variations of the SCAR platform, including the SCAR PDW (Personal Defense Weapon) and the SCAR-Mark 20 SSR (Sniper Support Rifle).
+          
+          10. Civilian Availability:
+              - While the FN SCAR was initially developed for military and law enforcement use, civilian variants have been made available in some countries for lawful civilian ownership and use.
+          
+          The FN SCAR is highly regarded for its performance, modularity, and reliability. Its adoption by elite military units and special operations forces worldwide speaks to its effectiveness in combat situations.            ";
+          break;
+          case 5 :
+          text = "  The HK416 is a modern assault rifle designed and manufactured by the German company Heckler & Koch (HK). Here is some detailed information about the HK416:
+
+          1. Origin and Design:
+             - The HK416 was developed as an improvement over the Colt M4 carbine, based on the feedback and requirements of special operations forces.
+             - It was designed in the early 2000s and became known for its reliability, durability, and enhanced features.
+          
+          2. Gas Piston System:
+             - One of the key features of the HK416 is its gas piston operating system, which replaces the direct impingement system found in the M4 carbine.
+             - The gas piston system helps reduce fouling and carbon buildup in the rifle, improving reliability and reducing the need for frequent cleaning.
+          
+          3. Caliber and Ammunition:
+             - The HK416 is primarily chambered in 5.56x45mm NATO, the same caliber as the M4 carbine and M16 rifle.
+             - However, it is also available in other calibers, such as 7.62x39mm and 6.8x43mm SPC (Special Purpose Cartridge).
+          
+          4. Construction and Features:
+             - The HK416 features a modular construction with a high-strength polymer lower receiver and an aluminum upper receiver.
+             - It incorporates a full-length Picatinny rail on the top of the receiver, allowing for easy attachment of optics and accessories.
+             - The rifle has a collapsible buttstock, adjustable for length of pull, and features ambidextrous controls for ease of use by both left-handed and right-handed shooters.
+          
+          5. Accuracy and Reliability:
+             - The HK416 is known for its exceptional accuracy and reliability in various environments and conditions.
+             - The gas piston system helps maintain consistent performance even in adverse situations, such as when the rifle is heavily fouled or exposed to extreme temperatures.
+          
+          6. Operating System:
+             - The HK416 utilizes a short-stroke gas piston system with a rotating bolt.
+             - This system reduces the amount of fouling and heat transferred to the receiver, enhancing reliability and extending the life of the rifle.
+          
+          7. Magazine and Capacity:
+             - The HK416 typically uses detachable box magazines.
+             - The standard magazine capacity is 30 rounds, although various capacities are available depending on regional regulations and user preferences.
+          
+          8. Variants:
+             - The HK416 has several variants and configurations, including carbine-length, rifle-length, and designated marksman rifle (DMR) versions.
+             - It is also the base platform for the HK417, a larger-caliber rifle chambered in 7.62x51mm NATO.
+          
+          9. Military Adoption:
+             - The HK416 has been adopted by numerous military and law enforcement organizations around the world, including special forces units.
+             - It has seen active use in various conflicts and operations, earning a reputation for its performance and reliability.
+          
+          10. Civilian Availability:
+              - While the HK416 was initially developed for military and law enforcement use, civilian variants have been made available in some countries for lawful civilian ownership and use.
+          
+          The HK416 is highly regarded for its performance, reliability, and modularity. Its adoption by elite military units and law enforcement agencies worldwide attests to its effectiveness and durability in the field.                 ";
+          break;
+          case 6 :
+          text = "  The Steyr AUG (Armee-Universal-Gewehr) is a bullpup assault rifle originally designed and manufactured by the Austrian company Steyr Mannlicher. Here is some detailed information about the Steyr AUG:
+
+          1. Origin and Design:
+             - The Steyr AUG was developed in the late 1960s and introduced in 1977 as the standard service rifle of the Austrian Army.
+             - It was designed by Horst Wesp, Karl Wagner, and Karl Möser to be a lightweight and compact rifle with improved ergonomics and handling.
+          
+          2. Bullpup Configuration:
+             - One of the distinctive features of the Steyr AUG is its bullpup configuration, which places the action and magazine behind the trigger group.
+             - This design allows for a shorter overall length while retaining a full-length barrel, providing better maneuverability in confined spaces.
+          
+          3. Construction and Features:
+             - The Steyr AUG features a modular construction with a polymer housing, which helps reduce weight while maintaining durability.
+             - It has a compact and ergonomic design, with an integrated optical sight and a top-mounted Picatinny rail for the attachment of additional optics and accessories.
+             - The rifle is ambidextrous, with controls such as the charging handle, magazine release, and selector switch accessible from both sides.
+          
+          4. Caliber and Ammunition:
+             - The Steyr AUG is chambered in 5.56x45mm NATO, the same caliber as the M16 rifle and M4 carbine.
+             - It uses standard NATO STANAG magazines, typically with a capacity of 30 rounds, although various capacities are available.
+          
+          5. Barrel and Barrel Exchange:
+             - The AUG features a quick-change barrel system, allowing the user to replace the barrel to adapt to different mission requirements or to address barrel wear.
+             - The standard barrel length is 20 inches (508 mm), providing good accuracy and muzzle velocity.
+          
+          6. Optics and Sighting System:
+             - The Steyr AUG comes with an integrated 1.5x optical sight as standard, with a built-in backup iron sight.
+             - The optic features a reticle with a range-finding function and allows for quick target acquisition.
+             - Users can also attach additional optics, such as red dot sights or magnified scopes, to the top-mounted Picatinny rail.
+          
+          7. Operating System:
+             - The AUG utilizes a gas-operated, piston-driven system with a rotating bolt.
+             - The gas piston drives the bolt carrier backward, extracting and ejecting the spent casing, and chambering a new round from the magazine.
+          
+          8. Variants:
+             - The Steyr AUG has undergone several design iterations and has been produced in various configurations.
+             - It includes versions with different barrel lengths, selective fire options (semi-automatic, burst fire, or fully automatic), and specialized variants for different roles and user preferences.
+          
+          9. Military Adoption:
+             - The Steyr AUG has been widely adopted by military and law enforcement organizations around the world.
+             - It has seen service in numerous conflicts and operations, and it is known for its reliability, versatility, and ease of use.
+          
+          10. Civilian Availability:
+              - Civilian variants of the Steyr AUG are available in some countries for civilian use.
+              - These variants are often semi-automatic only, adhering to legal restrictions on civilian ownership of fully automatic firearms.
+          
+          The Steyr AUG's bullpup design, compactness, and modularity make it a popular choice for military, law enforcement, and civilian users alike. Its reliability, accuracy, and innovative features have contributed to its reputation as a highly regarded and iconic rifle.                 ";
+          break;
+          case 7 :
+          text = "   The Beretta ARX160 is a modern modular assault rifle designed and manufactured by the Italian company Beretta. Here is some detailed information about the Beretta ARX160:
+
+          1. Origin and Design:
+             - The Beretta ARX160 was developed in the early 2000s as a replacement for the aging firearms used by the Italian Armed Forces.
+             - It was designed to be a lightweight, ergonomic, and versatile rifle suitable for various military and law enforcement applications.
+          
+          2. Construction and Features:
+             - The ARX160 features a high-strength polymer frame, which helps reduce weight while maintaining durability.
+             - It has a sleek and modern design with clean lines and a streamlined profile.
+             - The rifle is fully ambidextrous, with controls such as the charging handle, magazine release, and selector switch accessible from both sides.
+          
+          3. Caliber and Ammunition:
+             - The Beretta ARX160 is chambered in 5.56x45mm NATO, the same caliber as the M16 rifle and M4 carbine.
+             - It accepts standard NATO STANAG magazines, typically with a capacity of 30 rounds.
+          
+          4. Barrel and Barrel Exchange:
+             - The ARX160 features a quick-change barrel system, allowing the user to easily swap barrels of different lengths to adapt to different mission requirements.
+             - The barrel lengths vary from standard rifle length to shorter carbine lengths.
+          
+          5. Optics and Sighting System:
+             - The ARX160 has a full-length Picatinny top rail for the attachment of various optics, such as red dot sights, holographic sights, or magnified scopes.
+             - The rifle also features flip-up front and rear sights as backup options.
+          
+          6. Operating System:
+             - The ARX160 utilizes a gas-operated, piston-driven system with a rotating bolt.
+             - The gas piston drives the bolt carrier backward, extracting and ejecting the spent casing, and chambering a new round from the magazine.
+          
+          7. Fire Selector:
+             - The rifle has a fully ambidextrous fire selector switch, allowing the user to switch between semi-automatic, burst fire, and fully automatic modes of fire.
+          
+          8. Modular Design:
+             - The ARX160 is designed with modularity in mind, allowing the user to customize and configure the rifle to their specific needs.
+             - It features multiple accessory attachment points, including side rails and bottom rails, for the addition of grips, lasers, lights, and other accessories.
+          
+          9. Folding Stock:
+             - The ARX160 can be equipped with a folding stock, providing compactness and ease of transport in confined spaces.
+          
+          10. Civilian Availability:
+              - Civilian variants of the Beretta ARX160 are available in some countries for civilian use.
+              - These variants are often semi-automatic only, adhering to legal restrictions on civilian ownership of fully automatic firearms.
+          
+          The Beretta ARX160 offers a modern and versatile platform with its modular design, ambidextrous controls, and ergonomic features. Its lightweight construction, reliability, and accuracy make it suitable for a range of military, law enforcement, and civilian applications.                ";
+          break;
+          case 8 :
+          text = "   The SIG SG 550 is a renowned Swiss selective-fire assault rifle designed and manufactured by Swiss Arms AG (formerly SIG Arms AG). Here is some detailed information about the SIG SG 550:
+
+          1. Design and Development:
+             - The SIG SG 550, also known as the Sturmgewehr 90 (or simply SG 550), was developed in the late 1980s to replace the aging Swiss service rifles.
+             - The rifle was designed to be a versatile, accurate, and reliable firearm suitable for various military operations.
+          
+          2. Construction and Features:
+             - The SG 550 has a sturdy construction with a lightweight aluminum alloy receiver, synthetic furniture, and a folding stock.
+             - It features a gas-operated piston system with a rotating bolt, providing reliable cycling and minimizing felt recoil.
+             - The rifle has a traditional layout with a pistol grip, handguard, and a detachable box magazine.
+          
+          3. Caliber and Ammunition:
+             - The SG 550 is chambered in 5.56x45mm NATO, the same caliber as the M16 rifle and M4 carbine.
+             - It uses standard NATO STANAG magazines with various capacities, including 20 and 30 rounds.
+          
+          4. Barrel and Sighting System:
+             - The SG 550 typically has a 20.7-inch (526mm) cold hammer-forged barrel.
+             - It features a built-in folding bipod for improved stability during sustained fire.
+             - The rifle has adjustable iron sights, including a front post and a rear aperture sight, with settings for various distances.
+          
+          5. Optics and Accessories:
+             - The SG 550 has a built-in 1.5x optical sight integrated into the receiver, known as the "Swiss Army Sight" (SAS).
+             - The rifle also features a Picatinny rail on the receiver's top for the attachment of various optics, such as red dot sights or scopes.
+             - It supports the use of additional accessories like foregrips, tactical lights, and laser aiming modules.
+          
+          6. Fire Selector:
+             - The SG 550 has a three-position fire selector located above the pistol grip.
+             - The three firing modes are safe (S), single-shot (1), and fully automatic (20) or three-round burst (20+).
+          
+          7. Reliability and Accuracy:
+             - The SG 550 is known for its exceptional reliability, even in harsh environments and adverse conditions.
+             - It offers excellent accuracy and effective range, allowing for precise fire at medium to long distances.
+          
+          8. Variants and Derivatives:
+             - The SG 550 has several variants and derivatives, including the SG 551 (short-barreled version), SG 552 (compact version), and SG 553 (carbine version).
+             - These variants may have slight modifications in barrel length, stock design, and overall dimensions to suit specific requirements.
+          
+          9. Military Service:
+             - The SIG SG 550 has been the standard issue rifle of the Swiss Armed Forces since its adoption in 1990.
+             - It has also been exported to various countries and used by military and law enforcement agencies worldwide.
+          
+          The SIG SG 550 is highly regarded for its reliability, accuracy, and robust design. Its Swiss craftsmanship, attention to detail, and adherence to strict quality standards have contributed to its reputation as a top-tier assault rifle.                ";
+          break;
+          case 9 :
+          text = "  The Remington 700 is a bolt-action rifle that has become one of the most popular and widely used rifles in the world. Here is some detailed information about the Remington 700:
+
+          1. Design and Construction:
+             - The Remington 700 is designed as a bolt-action rifle, known for its solid construction and accuracy.
+             - The rifle features a cylindrical receiver made of steel, with a bolt that locks directly into the barrel, ensuring consistent alignment and accuracy.
+             - It has a traditional stock design, often made of wood or synthetic materials, with a comfortable pistol grip and a forend for stability.
+          
+          2. Calibers and Configurations:
+             - The Remington 700 is available in a wide range of calibers, including popular options such as .308 Winchester, .30-06 Springfield, and .300 Winchester Magnum.
+             - It comes in various configurations, including hunting, tactical, and target shooting models, to cater to different needs and preferences.
+          
+          3. Barrel and Action:
+             - The rifle typically has a free-floating barrel, meaning it is not in contact with the stock, allowing for better accuracy and reduced interference.
+             - The actions of the Remington 700 are known for their smoothness and reliability, contributing to the rifle's overall performance.
+          
+          4. Trigger System:
+             - The Remington 700 is equipped with a customizable trigger system known as the X-Mark Pro trigger.
+             - The trigger can be adjusted for pull weight and offers a crisp, clean break, enhancing accuracy and shooter control.
+          
+          5. Accuracy and Long-Range Capability:
+             - The Remington 700 is renowned for its exceptional accuracy, making it a popular choice among precision shooters and hunters.
+             - The rifle's design, combined with high-quality barrels and consistent manufacturing, allows for consistent sub-MOA (Minute of Angle) accuracy.
+             - The Remington 700 is often used for long-range shooting and is capable of delivering precise shots at extended distances.
+          
+          6. Aftermarket Support and Customization:
+             - The Remington 700 has a vast aftermarket support, with numerous accessories and upgrades available.
+             - Shooters can customize their rifles with various stocks, barrels, triggers, scopes, and other components to suit their specific needs and preferences.
+          
+          7. Military and Law Enforcement Use:
+             - The Remington 700 has been adopted by military and law enforcement agencies worldwide for its accuracy and reliability.
+             - In military applications, it is often used as a sniper rifle, with specialized variants like the Remington 700P (Police) and M24 Sniper Weapon System.
+          
+          8. Hunting Applications:
+             - The Remington 700 is highly regarded among hunters for its accuracy and versatility in various hunting scenarios.
+             - It is commonly used for hunting big game animals like deer, elk, and even larger species, depending on the caliber chosen.
+          
+          The Remington 700's reputation as a reliable, accurate, and customizable rifle has made it a favorite among hunters, sport shooters, and professionals alike. Its robust design, wide range of calibers, and ability to deliver precise shots at long distances have contributed to its popularity and continued success in the firearms market.                 ";
+          break;
+          case 10 :
+          text = "   The Barrett M82, also known as the Barrett .50 Caliber, is a powerful semi-automatic sniper rifle that has gained worldwide recognition for its long-range capabilities and immense stopping power. Here is some detailed information about the Barrett M82:
+
+          1. Design and Construction:
+             - The Barrett M82 is a large-caliber, shoulder-fired rifle designed for long-range precision shooting.
+             - It features a bullpup design, where the action and magazine are located behind the trigger, resulting in a shorter overall length while maintaining a full-length barrel.
+             - The rifle is constructed mainly from high-strength steel and aerospace-grade aluminum alloys to ensure durability and manage the recoil generated by the powerful .50 caliber ammunition.
+          
+          2. Caliber and Ammunition:
+             - The Barrett M82 is chambered in .50 BMG (.50 Browning Machine Gun), one of the largest and most powerful cartridges available for small arms.
+             - The .50 BMG ammunition is known for its exceptional long-range performance, high muzzle velocity, and ability to penetrate various barriers and armored targets.
+          
+          3. Operation and Features:
+             - The M82 operates on a semi-automatic action, meaning it fires one round with each pull of the trigger while automatically cycling the next round into the chamber.
+             - It features a rotating bolt system, which locks into the barrel extension to ensure proper alignment and strength during firing.
+             - The rifle is equipped with a heavy-duty muzzle brake or recoil compensator to reduce recoil and muzzle rise, allowing for faster follow-up shots.
+          
+          4. Long-Range Accuracy:
+             - The Barrett M82 is specifically designed for long-range precision shooting and has an effective range of over 1,800 meters (2,000 yards) or more.
+             - It is known for its exceptional accuracy and is capable of delivering precise shots on targets at extended distances.
+          
+          5. Anti-Materiel and Anti-Personnel Capabilities:
+             - The primary role of the Barrett M82 is as an anti-materiel rifle, used to disable or destroy enemy equipment, vehicles, or fortified structures.
+             - It can penetrate armored vehicles, concrete walls, and various types of cover, making it an effective tool for neutralizing threats from a distance.
+             - Additionally, the rifle can be employed for anti-personnel purposes, especially in scenarios where long-range engagement is required.
+          
+          6. Military and Law Enforcement Use:
+             - The Barrett M82 has been widely adopted by military and law enforcement organizations worldwide, including the armed forces of the United States.
+             - It is predominantly used by specialized units such as sniper teams, anti-materiel squads, and designated marksmen.
+             - The rifle's power, range, and accuracy make it a valuable asset in counter-sniper operations, long-range engagement, and urban warfare scenarios.
+          
+          7. Civilian and Sporting Use:
+             - While primarily developed for military and law enforcement use, the Barrett M82 has also found popularity among civilian firearms enthusiasts and long-range shooting competitors.
+             - It is utilized for long-range target shooting, precision shooting competitions, and as a collectible firearm due to its iconic status and unique capabilities.
+          
+          8. Accessories and Variants:
+             - The Barrett M82 platform has seen the development of various accessories and specialized variants over the years.
+             - These include different barrel lengths, adjustable stocks, optics, suppressor-ready models, and enhanced features to meet specific user requirements.
+          
+          The Barrett M82's reputation as a formidable, long-range sniper rifle has made it a symbol of power and precision in the firearms world. Its ability to deliver accurate shots at extreme distances, combined with the immense stopping power of the .50 caliber round, has solidified its place as one of the most recognized and respected sniper rifles in existence.                ";
+          break;
+          case 11 :
+          text = "   The Accuracy International AW50 is a highly regarded and powerful bolt-action sniper rifle designed for long-range precision shooting and anti-materiel applications. Here is some detailed information about the Accuracy International AW50:
+
+          1. Design and Construction:
+             - The Accuracy International AW50 is built with a robust and rugged design to withstand the rigors of military and law enforcement operations.
+             - It features a manually operated bolt-action system, where the shooter manually cycles the bolt after each shot to load the next round.
+             - The rifle has a solid and sturdy construction, utilizing high-quality materials such as steel and aluminum alloy to ensure durability and accuracy.
+          
+          2. Caliber and Ammunition:
+             - The AW50 is chambered in .50 BMG (.50 Browning Machine Gun), one of the largest and most powerful cartridges available for small arms.
+             - The .50 BMG ammunition used in the AW50 is known for its exceptional long-range performance, high muzzle velocity, and ability to penetrate various barriers and armored targets.
+          
+          3. Accuracy and Long-Range Performance:
+             - The Accuracy International AW50 is renowned for its exceptional accuracy and long-range capabilities.
+             - It is designed to deliver precise shots on targets at extended distances, with an effective range of over 1,500 meters (1,640 yards) or more.
+             - The rifle is built to minimize recoil and enhance stability, allowing the shooter to maintain accuracy and make follow-up shots quickly.
+          
+          4. Features and Ergonomics:
+             - The AW50 incorporates several features to enhance its usability and ergonomics.
+             - It typically includes a detachable box magazine that holds multiple rounds, allowing for quicker reloads.
+             - The rifle may feature an adjustable cheek rest and a fully adjustable stock to accommodate different shooter preferences and positions.
+             - It is often equipped with a high-quality precision rifle scope or optics for long-range targeting and engagement.
+          
+          5. Anti-Materiel and Anti-Personnel Capabilities:
+             - The primary role of the Accuracy International AW50 is as an anti-materiel rifle, designed to engage and neutralize armored vehicles, equipment, and fortified structures.
+             - Its high muzzle velocity and powerful .50 BMG ammunition enable it to penetrate heavy armor and deliver substantial damage to targets.
+             - The rifle can also be employed for anti-personnel purposes, especially in scenarios where long-range engagement is required.
+          
+          6. Military and Law Enforcement Use:
+             - The Accuracy International AW50 is widely used by military and law enforcement organizations across the world.
+             - It is commonly employed by specialized sniper teams, anti-materiel squads, and designated marksmen.
+             - The rifle's exceptional long-range accuracy and ability to engage hardened targets make it a valuable asset in both offensive and defensive operations.
+          
+          7. Civilian Use and Sporting Applications:
+             - While primarily developed for military and law enforcement use, the Accuracy International AW50 has also gained popularity among civilian firearms enthusiasts and long-range shooting competitors.
+             - It is utilized for long-range target shooting, precision shooting competitions, and as a collectible firearm due to its performance and reputation.
+          
+          8. Accessories and Variants:
+             - The Accuracy International AW50 can be customized with various accessories to meet specific user requirements.
+             - These accessories may include bipods, monopods, suppressor-ready muzzle devices, adjustable triggers, and different stock options.
+             - The rifle may also have different barrel lengths and finishes available.
+          
+          The Accuracy International AW50 is highly regarded for its exceptional accuracy, long-range performance, and anti-materiel capabilities. Its robust construction, combined with the power of the .50 BMG cartridge, allows it to engage and neutralize targets at extreme distances. Whether in military operations or civilian shooting competitions, the AW50 continues to be recognized as a top-per                ";
+          break;
+          case 12 :
+          text = "   The Sako TRG is a series of bolt-action sniper rifles manufactured by the Finnish company Sako Ltd. These rifles are renowned for their precision, durability, and adaptability, making them popular choices among military and law enforcement sniper teams, as well as civilian long-range shooters. Here is some detailed information about the Sako TRG:
+
+          1. Design and Construction:
+             - The Sako TRG features a robust and ergonomic design, optimized for accuracy and ease of use in various shooting positions.
+             - The rifle is built around a sturdy and rigid receiver, typically made from steel, ensuring excellent stability and consistency.
+             - It utilizes a bolt-action system, where the shooter manually cycles the bolt to load and eject cartridges for each shot.
+          
+          2. Calibers and Configurations:
+             - The Sako TRG is available in several calibers, including .308 Winchester, .300 Winchester Magnum, and .338 Lapua Magnum, among others.
+             - These calibers offer different levels of ballistic performance, allowing the shooter to select the appropriate cartridge for their intended shooting distances and applications.
+             - The TRG series also offers different barrel lengths and configurations to accommodate specific user requirements.
+          
+          3. Accuracy and Precision:
+             - The Sako TRG is highly regarded for its exceptional accuracy and precision.
+             - The rifle is designed and manufactured to stringent tolerances, ensuring consistent and repeatable shot placement.
+             - The combination of a high-quality barrel, precise bedding of the action, and a superb trigger contributes to the rifle's outstanding accuracy.
+          
+          4. Adjustable Ergonomics:
+             - The TRG series features a highly adjustable stock, allowing the shooter to customize the rifle's fit to their individual preferences and shooting style.
+             - The stock typically offers adjustable length of pull, cheek rest height, and recoil pad position, enabling the shooter to achieve optimal comfort and stability.
+          
+          5. Versatility and Adaptability:
+             - The Sako TRG is known for its adaptability to different shooting scenarios and operational requirements.
+             - It incorporates a variety of features and accessory options, such as multiple sling attachment points, accessory rails, and detachable magazines.
+             - The rifle can be easily equipped with various optics, muzzle devices, and other accessories to enhance its capabilities and suit specific mission profiles.
+          
+          6. Durability and Reliability:
+             - The TRG rifles are built to withstand harsh environmental conditions and intensive use.
+             - They are constructed with high-quality materials and undergo rigorous testing to ensure durability and reliability in the field.
+             - The rifles are designed to maintain consistent performance even in challenging environments, making them reliable tools for professional users.
+          
+          7. Safety Features:
+             - The Sako TRG incorporates several safety features to prevent accidental discharges and ensure user safety.
+             - These features may include a three-position safety switch, which allows the shooter to lock the bolt or fire the rifle with the safety engaged.
+             - The rifles also feature a robust bolt handle, ensuring secure handling and operation.
+          
+          8. Military and Law Enforcement Use:
+             - The Sako TRG series is widely used by military and law enforcement agencies around the world.
+             - It has gained a reputation as a reliable and accurate sniper rifle, capable of engaging targets at extended ranges with precision.
+             - The TRG rifles are often employed by specialized sniper teams, counter-terrorism units, and designated marksmen.
+          
+          9. Civilian Use and Sporting Applications:
+             - The Sako TRG rifles have also gained popularity among civilian shooters, particularly in the field of long-range precision shooting and competitive shooting disciplines.
+             - The rifles' accuracy, adjustable ergonomics, and versatility make them suitable for various shooting competitions, including long-range matches and precision rifle competitions.
+          
+          The Sako TRG is a highly regarded series of sniper rifles known   ";
+          break;
+          case 13 :
+          text = " The Dragunov SVD (Snaiperskaya Vintovka Dragunova) is a semi-automatic sniper rifle that was designed in the Soviet Union by Evgeny Dragunov. It entered service in 1963 and has since become one of the most recognizable and widely used sniper rifles in the world. Here is some detailed information about the Dragunov SVD:
+
+          1. Design and Construction:
+             - The Dragunov SVD is built around a gas-operated, long-stroke piston system, which provides reliable and smooth semi-automatic operation.
+             - It features a traditional wooden stock that provides stability and balance to the rifle.
+             - The rifle has a chrome-lined barrel for increased durability and corrosion resistance.
+          
+          2. Caliber and Ammunition:
+             - The Dragunov SVD is chambered in 7.62x54mmR, a rimmed rifle cartridge.
+             - This caliber is known for its long-range capabilities and effective terminal ballistics.
+          
+          3. Accuracy and Range:
+             - The SVD is designed to be a designated marksman rifle, capable of engaging targets at medium to long ranges.
+             - It is known for its accuracy, achieving sub-MOA (minute of angle) precision at distances of up to 800 meters or more.
+          
+          4. Optics and Sight System:
+             - The Dragunov SVD is typically equipped with a PSO-1 (Pritsel Snaipersky Optichesky) scope, specially designed for this rifle.
+             - The PSO-1 scope features a range-finding reticle and bullet drop compensation markings, enabling the shooter to estimate range and make accurate adjustments for bullet drop.
+          
+          5. Magazine and Action:
+             - The SVD uses a detachable box magazine with a capacity of 10 rounds.
+             - It operates on a semi-automatic action, meaning that each round is fired with a single squeeze of the trigger without the need to manually cycle the bolt.
+          
+          6. Effective Design Features:
+             - The Dragunov SVD has several design features that contribute to its effectiveness.
+             - It has a relatively long barrel for improved muzzle velocity and accuracy.
+             - The rifle's stock is designed to mitigate recoil and enhance stability during firing.
+             - The SVD also features a distinctive, permanently attached muzzle brake that helps reduce muzzle climb and improve follow-up shot accuracy.
+          
+          7. Military and Law Enforcement Use:
+             - The Dragunov SVD has been widely adopted by various military and law enforcement organizations around the world.
+             - It has been used by the Soviet Union, Russia, and many other countries as a standard sniper rifle.
+             - The SVD has seen action in numerous conflicts and has gained a reputation for its reliability and effectiveness.
+          
+          8. Civilian Use and Sporting Applications:
+             - The Dragunov SVD has also become popular among civilian firearms enthusiasts and long-range shooting enthusiasts.
+             - It is often used for sport shooting, target shooting, and long-range competitions.
+             - Many civilian variants of the SVD are available on the market, although they may differ in certain features and construction to comply with local regulations.
+          
+          The Dragunov SVD is recognized for its iconic design and widespread use as a semi-automatic sniper rifle. Its accuracy, reliability, and adaptability have made it a trusted firearm for military, law enforcement, and civilian users alike.                  ";
+          break;
+        // Add more cases for additional pictures
+
+        default:
+          text = "Text not available";
+          break;
+      }
+
+      textContainer.textContent = text;
+    }
+  </script>
+</body>
+</html>

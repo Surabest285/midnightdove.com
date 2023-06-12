@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #060257;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    
+    section {
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    .card-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(8, 3, 74, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .card-overlay:hover {
+      opacity: 1;
+    }
+    
+    .card-overlay h3,
+    .card-overlay p {
+      color: #fff;
+      margin: 10px;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      background-color: #07015a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    footer {
+      background-color: #16035a;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+       <h1> <li><a href="#">Explore</a></li> </h1>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="explore-section">
+    <div class="container">
+      <h2>Featured Content</h2>
+      <div class="explore-grid">
+        <div class="card">
+          <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\shero_119h-wu_zw8v-ns.jpg" alt="Card Image">
+          <div class="card-overlay">
+            <h3>Featured Article</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\file.jpg" alt="Card Image">
+          <div class="card-overlay">
+            <h3>Featured Video</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">Watch Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="c:\Users\PC\OneDrive\Pictures\Saved Pictures\shiro-wot.jpg" alt="Card Image">
+          <div class="card-overlay">
+            <h3>Featured Gallery</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Explore Page. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const title = card.querySelector('h3').textContent;
+        alert(`Clicked on ${title}`);
+      });
+    });
+    const cardButtons = document.querySelectorAll('.card-button');
+    cardButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.card');
+        const description = card.querySelector('.card-description');
+        description.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In / Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("   https://img.freepik.com/free-photo/dark-black-texture-background_24837-267.jpg?w=900&t=st=1685712620~exp=1685713220~hmac=fe733cfad385688692e0e143ac19900077a2c56964a25e2e1fa891293489d617   ") no-repeat center center fixed;
+      background-size: cover;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    
+    .container {
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
+      background-color:
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+      color:
+    }
+    
+    input[type="submit"] {
+      background-color:
+     color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .switch-form {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Sign In</h1>
+    <form id="signin-form">
+      <label for="signin-email">Email:</label>
+      <input type="email" id="signin-email" required>
+      
+      <label for="signin-password">Password:</label>
+      <input type="password" id="signin-password" required>
+      
+      <input type="submit" value="Sign In">
+    </form>
+    
+    <div class="switch-form">
+      <a href="#" id="signup-link">Don't have an account? Sign Up</a>
+    </div>
+  </div>
+  
+  <script>
+    const signinForm = document.getElementById('signin-form');
+    const signupLink = document.getElementById('signup-link');
+    
+    signupLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      document.querySelector('h1').textContent = 'Sign Up';
+      signinForm.innerHTML = `
+        <label for="signup-name">Name:</label>
+        <input type="text" id="signup-name" required>
+        
+        <label for="signup-email">Email:</label>
+        <input type="email" id="signup-email" required>
+        
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" required>
+        
+        <input type="submit" value="Sign Up">
+      `;
+      
+      const switchForm = document.createElement('div');
+      switchForm.className = 'switch-form';
+      switchForm.innerHTML = `
+        <a href="#" id="signin-link">Already have an account? Sign In</a>
+      `;
+      
+      signinForm.appendChild(switchForm);
+      
+      const signinLink = document.getElementById('signin-link');
+      signinLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('h1').textContent = 'Sign In';
+        signinForm.innerHTML = `
+          <label for="signin-email">Email:</label>
+          <input type="email" id="signin-email" required>
+          
+          <label for="signin-password">Password:</label>
+          <input type="password" id="signin-password" required>
+          
+          <input type="submit" value="Sign In">
+        `;
+        
+        switchForm.remove();
+      });
+    });
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the input values
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Perform an AJAX request to validate the credentials
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "/login", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+
+      xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+              if (xhr.status === 200) {
+                  // Login successful, redirect to the original code page
+                  window.location.href = "newweb.html";
+              } else {
+                  // Login failed, show an error message
+                  alert("Invalid username or password");
+                
+              }
+          }
+      };
+
+      var data = JSON.stringify({ username: username, password: password });
+      xhr.send(data);
+  });
+  </script>
+</body>
+</html>
